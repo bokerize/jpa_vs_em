@@ -1,0 +1,53 @@
+
+
+CREATE TABLE `sam_jpa_table` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `drn` varchar(255) DEFAULT NULL,
+  `other` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE `sam_table` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `drn` varchar(255) DEFAULT NULL,
+  `other` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE `req_sent` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `sam_type` varchar(255) DEFAULT NULL,
+  `sam_id` varchar(255) DEFAULT NULL,
+  `comment` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+insert into sam_jpa_table (drn) values ('drn1');
+insert into sam_jpa_table (drn) values ('drn2');
+insert into sam_jpa_table (drn) values ('drn3');
+
+insert into sam_table (drn) values ('drn1');
+insert into sam_table (drn) values ('drn2');
+insert into sam_table (drn) values ('drn3');
+
+commit;
+
+
+delete from req_sent;
+
+update sam_jpa_table set other = null;
+
+update sam_table set other = null;
+
+commit;
+
+
+
+select * from sam_jpa_table;
+
+select * from sam_jpa_table;
