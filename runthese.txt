@@ -1,0 +1,16 @@
+http://localhost:8080/test/em/try1
+
+http://localhost:8080/test/em/try1
+
+
+
+http://localhost:8080/test/jpa/try1
+http://localhost:8080/test/jpa/try2
+
+
+http://localhost:8080/test/jpaf/try1
+http://localhost:8080/test/jpaf/try2
+
+
+http://localhost:8080/test/jpapf/try1
+http://localhost:8080/test/jpapf/try2
